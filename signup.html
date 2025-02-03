@@ -75,9 +75,11 @@
             const confirmPassword = document.getElementById('confirm-password').value;
 
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+			
 			if(name === ""){
 			alert("You must enter a name!");
 			}
+			
             if (!emailRegex.test(email)) {
                 alert('Please enter a valid email address.');
                 event.preventDefault();
